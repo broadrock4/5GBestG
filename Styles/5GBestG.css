@@ -1,0 +1,222 @@
+body {
+	width: 100%;
+}
+h1{
+	text-align: center
+}
+.createAccountsBody{
+	text-align: center;
+}
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.nav{
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.nav a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active{
+  background-color: #2196F3;
+  color: white;
+}
+
+.nav .search-container{
+  float: right;
+}
+
+.nav input[type=text]{
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.nav .search-container button{
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav .search-container button:hover{
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px){
+  .nav .search-container{
+    float: none;
+  }
+
+  .nav a, .nav input[type=text], .nav .search-container button{
+    float:none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .nav input[type=text]{
+    border: 1px solid #ccc;
+  }
+
+}
+
+.category-menu {
+  width: 200px;
+  height: 150px;
+  float: right;
+
+}
+
+.category-menu a {
+  /*background-color: #eee;*/
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border-left: 2px solid black;
+  overflow: hidden;
+}
+
+.category-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.blogroll{
+  width: 200px;
+  height: 150px;
+  float: right;
+}
+
+.blogroll a{
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border-left: 2px solid black;
+  overflow: hidden;
+}
+
+.blogroll a:hover{
+  background-color: #ccc;
+}
+
+.blogroll a.active{
+  background-color: #4CAF50;
+  color: white;
+}
+.pic-description{
+	padding: 10px;
+}
+
+.pic-description img{
+  position: relative;
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 100px;
+  float: left;
+}
+
+.pic-description p{
+	position: relative;
+  	height: 600px;
+ 	width: 30%;
+ 	float:left;
+  	font-size: 20px;
+	padding-left: 20px;
+}
+
+
+.regSubmitButton{
+	background-color: #e9e9e9;
+	color: black;
+	margin-top: 7px;
+	padding: 8px;
+}
+.regSubmitButton:hover{
+	background-color: #ddd;
+  	color: black;
+	padding: 10px;
+}
+
+.adminInfo{
+	position: absolute;
+	margin-top: 500px;
+	left: 2%;
+}
+
+.adminList{
+	margin-left: 50px;
+	height: 500px;
+	overflow-y: scroll;
+}
+
+.adminList ul{
+	 list-style-type: none;
+}
+.adminList img{
+	width: 300px;
+	height: 150px;
+}
+
+.adminList li{
+	display: inline;
+}
+.adminName{
+	font-size: 30px;
+	margin-left: 40px;
+}
+.adminDiscr{
+	border:thin solid;
+	display:inline-block;
+	margin-left: 80px;
+	vertical-align: middle;
+	width: 600px;
+}
+
+.AboutFooter{
+	border-top: solid thin;
+	border-color: black;
+	margin-top: 1150px;
+	padding: 20px;
+	text-align: center;
+}
+
+.AboutFooter a{
+	padding: 20px;
+	font-size: 20px;
+		
+}
+
+
+
+
+
