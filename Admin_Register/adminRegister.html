@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Create Account</title>
+<title>Create Admin Account</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="../Styles/5GBestG.css"/>
-	<script type="text/javascript" src="../Admin_Register/userRegister.js"> </script>
+	<script type="text/javascript" src="../Admin_Register/adminRegister.js"> </script>
     </head>
   <body class="createAccountsBody">
     <!--Logo for website -->
@@ -25,21 +25,21 @@
         <p>Please fill out form to create an admin an account.</p>
 	  
        <form action="">
-			<p>
+			
                 <input type="text" id="username" placeholder = "Username"/>
-			</p>
-           
-			<p>
+					<br/> <br/>
                <input type="password" id="pwd1" placeholder="Password"/> 
-			</p>
-		   <p> 
+					<br/> <br/>
  				<input type="password" id="pwd2" placeholder="Re-Enter Password"/>
-		   </p>
+		  			<br/>
+		   		<p> Please enter the Admin Validation PIN</p>
+		   <input type="password" id="adminPIN" placeholder="PIN"/>
+		   			<br/> <br/>
 				<input type="submit" class="regSubmitButton" id="submitButton" value="Create Account" />
            
             <p>Already have an account? <a class ="special" href="../Admin_Register/home.html">Login here</a>.</p>
 			
         </form>
-	  <script type="text/javascript" src="../Admin_Register/userRegisterR.js"> </script>
+	  <script type="text/javascript" src="../Admin_Register/adminRegisterR.js"> </script>
 </body>
 </html>
