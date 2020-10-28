@@ -1,8 +1,8 @@
 // JavaScript Document 
 //Event Handling Functions
 function chkUsername() {
-  var name = document.getElementById("username").value;
-  if (name.length <= 1) {
+  var usName = document.getElementById("username").value;
+  if (usName.length <= 1) {
     alert("Error: Username is required and must be longer then 3 characters.");
     return false
   } else {

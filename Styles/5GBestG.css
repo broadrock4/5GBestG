@@ -1,5 +1,6 @@
+/* General CSS for most pages */
 body {
-  zoom: 65%;
+  zoom: 60%;
 }
 h1 {
   text-align: center
@@ -116,6 +117,8 @@ h1 {
   background-color: #4CAF50;
   color: white;
 }
+
+/* CSS for pages that have an Image and <p> element */
 .pic-description {
   padding: 10px;
 }
@@ -129,11 +132,16 @@ h1 {
 .pic-description p {
   float: left;
   font-size: 20px;
-  height: 600px;
+  height: 300px;
   overflow: hidden;
   padding-left: 20px;
   width: 30%;
 }
+
+/*Custom CSS for Home page*/
+
+
+/*Custom CSS for Create account / registration pages */
 .regSubmitButton {
   background-color: #e9e9e9;
   color: black;
@@ -145,6 +153,8 @@ h1 {
   color: black;
   padding: 10px;
 }
+
+/*Custom CSS for about us pages */
 .adminList {
   float: right;
   font-size: 30px;
@@ -185,4 +195,57 @@ h1 {
 .AboutFooter a {
   font-size: 20px;
   padding: 20px;
+}
+
+/*Custom CSS for Contact us page */
+.contact-us p {
+  border: thin solid;
+	overflow: hidden;
+	margin-left: 10px;
+  text-align: left;
+  width: 500px;
+  
+}
+.contact-us textarea {
+  overflow: hidden;
+  width: 400px;
+}
+.contactFooter {
+  border-top: solid thin;
+  border-color: black;
+  margin-top: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.contactFooter a {
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* Custom CSS for Profile page */
+.like-history-list {
+  margin-left: 50px;
+  height: 500px;
+  overflow: scroll;
+	float: right;
+  font-size: 30px;
+  padding: 20px;
+}
+.like-history-list ul {
+  list-style-type: none;
+}
+.like-history-list img {
+  width: 300px;
+  height: 200px;
+}
+.like-history-list li {
+  display: inline;
+}
+.like-description {
+  border: thin solid;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 80px;
+  vertical-align: middle;
+  width: 50%;
 }
