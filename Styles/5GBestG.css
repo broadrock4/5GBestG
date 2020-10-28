@@ -146,6 +146,7 @@ h1 {
   font-size: 1.5em;
   width: 60%;
 }
+
 .recentArticle {
   font-size: 1em;
   text-align: left;
@@ -273,4 +274,52 @@ h1 {
   margin-left: 80px;
   vertical-align: middle;
   width: 50%;
+}
+
+.PostName{
+  width: 150px;;
+  float: left;
+}
+
+.PostName a {
+  /*background-color: #eee;*/
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border-right: 2px solid black;
+  width: 100%
+  
+}
+
+.PostName a:hover {
+  background-color: #ccc;
+	
+}
+	
+
+
+.Post {
+   background-color: white;
+	padding-left: 200px;
+	padding-right: 200px;
+	overflow: hidden;
+	text-align: center;
+	width: 80%;
+	
+
+
+}
+.Post p{
+	text-align: center;
+	border: thin solid black;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+	text-align: center;
+  width: 100%;
+  padding: 20px;
+	
 }
