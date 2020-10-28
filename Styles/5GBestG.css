@@ -1,5 +1,6 @@
 /* General CSS for most pages */
 body {
+	background-color: paleturquoise;
   zoom: 60%;
 }
 h1 {
@@ -138,7 +139,7 @@ h1 {
 }
 /*Custom CSS for Home page*/
 .homeBody {
-  zoom: 100%;
+  zoom: 80%;
 }
 .home {
   text-align: left;
@@ -197,17 +198,16 @@ h1 {
   width: 300px;
 }
 .adminList li {
-  display: inline;
+  display: inline-block;
 }
 .adminName {
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .adminDiscr {
   border: thin solid;
   display: inline-block;
   font-size: 15px;
-  margin-left: 80px;
   vertical-align: middle;
   width: 50%;
 }
@@ -275,7 +275,6 @@ h1 {
 /* Custom CSS for blog articles */
 .PostName {
   width: 150px;
-  ;
   float: left;
 }
 .PostName a {
@@ -291,7 +290,6 @@ h1 {
   background-color: #ccc;
 }
 .Post {
-  background-color: white;
   padding-left: 150px;
   padding-right: 160px;
   overflow: hidden;
@@ -309,6 +307,9 @@ h1 {
   width: 100%;
   padding: 20px;
 }
+.articleLikeButton{
+	text-align: right;
+}
 
 .commentArea{
 	text-align: center;
@@ -320,3 +321,18 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* Custom CSS for Post Webpage */
+
+.postArea{
+	text-align: center;
+	
+}
+
+.postArea textarea{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

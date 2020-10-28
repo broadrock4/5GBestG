@@ -83,17 +83,26 @@
       <div class="fakeimg" style="height:200px;">Image</div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+		
+		<form action="" class="articleLikeButton" >
+			<input type ="button" value = "like"/>
+			<input type ="button" value = "dislike"/>
+		
+		</form>
     </div>
 	  
 	  <form action="" id="usrform" class="commentArea">
-  Name: <input type="text" id="usrname"/>
-  <input type="submit" id="submitButton"/>
-</form>
+  Name: <input type="text" required id="usrname"/>
+  
+
 	  
 <br>
-<textarea placeholder="Enter text here..." rows="8" cols="75" name="comment" form="usrform">
+<textarea required placeholder="Enter text here..." rows="8" cols="75" name="comment" form="usrform">
 </textarea>
-		  
+		  <input type="submit" id="submitButton"/>
+		  <!-- This button will have php to only allow Admins to see -->
+		  <input type="button" value="Remove"/>
+		</form>  
 	  	
 	 <footer class="AboutFooter">
 		<a href="contactUs.html"> Contact Us</a> 

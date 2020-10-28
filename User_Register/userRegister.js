@@ -17,7 +17,7 @@ function chkPasswords(){
 	var pass2 = document.getElementById("pwd2").value;
 	var usName = document.getElementById("username").value;
 	
-	if(pass1.length==0 || pass2.length==0 || usName==0){
+	if(pass1.length==0 || pass2.length==0 || usName.length==0){
 		alert("Error: Username, password and confirm password required.")
 		return false;
 	}
