@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home</title>
 	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="../Styles/5GBestG.css"/>
 </head>
 
-  <body>
+  <body class="homeBody">
 
     <header>
       <nav>
@@ -22,7 +23,9 @@
             <a href="../About_Us/about.html">About</a>
             <a href="../Contact_US/contact.html">Contact Us</a>
             <a href="../Profiles/userProfile.html">myProfile</a>
+			<a href="../Login/login.html">Login</a>
             <div class="search-container">
+				
               <form action="/action_page.php">
                 <input type="text"
           placeholder="Search.." name="search">
@@ -60,36 +63,45 @@
 		  </div>
 	</nav>
     </header>
+
 	<!-- This code is subject to change because all this information will need to be pulled from a database. We wanted to show what the final project will look like -->
-    <h1>Most Recent Article </h1>
-      <div class= "recentarticle-description">
+    <h1> Welcome to 5GBestG </h1>
+      <div class= "home">
      <p>
-     Posted on Month/Day/Year by Admin #1
+     Creators: Tyler Burdick, Oscar Castellanos, Antowyn Cauley II, Paul Nguyen, Yuvi Singh, Chris Williams.
      </p>
+        <p> The majority of people hear “5G” being advertised on numerous media outlets, whether it be on television ads, mobile ads, radio, billboards etc. Ask anyone about what 5G is, and they’ll probably say something like “It’s just a faster network for my devices”. As true as that may be, is that really all it is? The fact of the matter is that the masses don’t really know the concept of 5G and the pros and cons that come with it. Our blog site will help inform the general public of what really 5G is, how it works, and the potential hazardous health complications that come with it. Inform the public about 5G and provide a greater understanding of what it is, where 5G comes from, benefits and disadvantages, and the future capabilities.
+		  </p>
+        <p>
+        About Post || 10/28/2020 || 5GBestG
+        </p>
+	  </div>
+    <h1> Most Recent Article </h1>
+      <div class= "recentArticle">
+     <p>
+     Posted on Month/Day/Year by User #1
+      
+     </p>
+		  <h2> Title </h2>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et olore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			Lorem ipsum dolor sit amet, <img src="../Styles/placeholder.jpg" alt="Profile Pic"/> consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et olore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit
           esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
           occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum. More...
-		  </p>
-        <p>
-        Posted in Uncategorized || Tagged tag1, tag2 || No comments
-        </p>
-
-    <h1>Article Title </h1>
-      <div class= "recentarticle-description">
-     <p>
-     Posted on Month/Day/Year by User #1
-      <img src="../Styles/Profile.png" alt="Profile Pic"/>
-     </p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et olore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum. ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit
           esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
           occaecat cupidatat non proident, sunt in culpa qui officia
         deserunt mollit anim id est laborum. More  </p>
@@ -98,11 +110,10 @@
         </p>
 
     </div>
-
-	 <footer class="AboutFooter">
-		<a href="contact.html"> Contact Us</a>
-		<a href="about.html"> About Us </a>
-	</footer>
-	  </div>
+	
+	  <div class="homeFooter">
+		<a href="../Contact_US/contact.html"> Contact Us</a>
+		<a href="../About_Us/about.html"> About Us </a>
+	</div>
   </body>
 </html>
