@@ -146,7 +146,6 @@ h1 {
   font-size: 1.5em;
   width: 60%;
 }
-
 .recentArticle {
   font-size: 1em;
   text-align: left;
@@ -247,8 +246,6 @@ h1 {
   padding: 20px;
 }
 /* Custom CSS for Profile page */
-
-
 .like-history-list {
   margin-left: 50px;
   height: 500px;
@@ -275,12 +272,12 @@ h1 {
   vertical-align: middle;
   width: 50%;
 }
-
-.PostName{
-  width: 150px;;
+/* Custom CSS for blog articles */
+.PostName {
+  width: 150px;
+  ;
   float: left;
 }
-
 .PostName a {
   /*background-color: #eee;*/
   color: black;
@@ -289,37 +286,37 @@ h1 {
   text-decoration: none;
   border-right: 2px solid black;
   width: 100%
-  
 }
-
 .PostName a:hover {
   background-color: #ccc;
-	
 }
-	
-
-
 .Post {
-   background-color: white;
-	padding-left: 200px;
-	padding-right: 200px;
-	overflow: hidden;
-	text-align: center;
-	width: 80%;
-	
-
-
+  background-color: white;
+  padding-left: 150px;
+  padding-right: 160px;
+  overflow: hidden;
+  text-align: center;
+  width: 80%;
 }
-.Post p{
-	text-align: center;
-	border: thin solid black;
+.Post p {
+  text-align: center;
+  border: thin solid black;
 }
-
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
-	text-align: center;
+  text-align: center;
   width: 100%;
   padding: 20px;
+}
+
+.commentArea{
+	text-align: center;
 	
+}
+
+.commentArea textarea{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
