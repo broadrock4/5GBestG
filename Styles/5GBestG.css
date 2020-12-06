@@ -1,7 +1,10 @@
 /* General CSS for most pages */
 body {
-	background-color: paleturquoise;
+  background-color: paleturquoise;
   zoom: 60%;
+}
+body p {
+  font-size: 1.5vh;
 }
 h1 {
   text-align: center
@@ -119,23 +122,28 @@ h1 {
   color: white;
 }
 /* CSS for pages that have an Image and <p> element */
-.pic-description {
-  padding: 10px;
+.container-grid {
+  display: grid;
+  grid-template-columns: 40% 50%; /*columns widths*/
+  height: 40vh;
 }
-.pic-description img {
-  position: relative;
-  float: left;
-  height: 500px;
-  margin-left: 100px;
-  width: 500px;
+.col-1 {
+  text-align: center;
+  font-family: "American Typewriter";
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 10px;
 }
-.pic-description p {
-  float: left;
-  font-size: 20px;
-  height: 300px;
-  overflow: hidden;
-  padding-left: 20px;
-  width: 30%;
+.col-1 img {
+  width: 100%;
+}
+.col-2 {
+  font-family: "American Typewriter";
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.col-2 h2 {
+  font-size: 2vh;
 }
 /*Custom CSS for Home page*/
 .homeBody {
@@ -182,39 +190,37 @@ h1 {
   padding: 10px;
 }
 /*Custom CSS for about us pages */
-.adminList {
-  float: right;
-  font-size: 30px;
-  height: 500px;
-  margin-left: 50px;
-  overflow: scroll;
-  padding: 20px;
+.displayAdmins {
+  border: medium solid black;
+  height: 400px;
+  overflow-y: scroll;
+  width: 90%;
 }
-.adminList ul {
-  list-style-type: none;
+.displayAdmins h2 {
+  text-align: center;
 }
-.adminList img {
-  height: 150px;
-  width: 300px;
-}
-.adminList li {
-  display: inline-block;
-}
-.adminName {
-  font-size: 20px;
-  margin-left: 20px;
-}
-.adminDiscr {
-  border: thin solid;
-  display: inline-block;
-  font-size: 15px;
-  vertical-align: middle;
+.adminImg {
+  height: 50%;
+  padding: 5px;
   width: 50%;
+}
+.adminTable table {
+  border: 2px solid black;
+  width: 90%;
+}
+th.tableImg, td.tableImg {
+  text-align: center;
+  width: 30%;
+}
+th.tableName, th.tableBio, td.tableName, td.tableBio {
+  overflow: hidden;
+  text-align: center;
+  width: 25%
 }
 .AboutFooter {
   border-top: solid thin;
   border-color: black;
-  margin-top: 1050px;
+  margin-top: 300px;
   padding: 20px;
   text-align: center;
 }
@@ -245,33 +251,6 @@ h1 {
   font-size: 20px;
   padding: 20px;
 }
-/* Custom CSS for Profile page */
-.like-history-list {
-  margin-left: 50px;
-  height: 500px;
-  overflow: scroll;
-  float: right;
-  font-size: 30px;
-  padding: 20px;
-}
-.like-history-list ul {
-  list-style-type: none;
-}
-.like-history-list img {
-  width: 300px;
-  height: 200px;
-}
-.like-history-list li {
-  display: inline;
-}
-.like-description {
-  border: thin solid;
-  display: inline-block;
-  font-size: 15px;
-  margin-left: 80px;
-  vertical-align: middle;
-  width: 50%;
-}
 /* Custom CSS for blog articles */
 .PostName {
   width: 150px;
@@ -290,15 +269,14 @@ h1 {
   background-color: #ccc;
 }
 .Post {
-  padding-left: 150px;
+  padding-left: 20px;
   padding-right: 160px;
   overflow: hidden;
   text-align: center;
-  width: 80%;
 }
 .Post p {
-  text-align: center;
-  border: thin solid black;
+  text-align: left;
+	text-indent: 25px;
 }
 /* Fake image */
 .fakeimg {
@@ -307,32 +285,68 @@ h1 {
   width: 100%;
   padding: 20px;
 }
-.articleLikeButton{
-	text-align: right;
+.articleLikeButton {
+  text-align: right;
 }
-
-.commentArea{
-	text-align: center;
-	
+.commentArea {
+  text-align: center;
 }
-
-.commentArea textarea{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+.commentArea textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
-/* Custom CSS for Post Webpage */
-
-.postArea{
-	text-align: center;
-	
+.show_comments {
+  background-color: antiquewhite;
+  border: 2px solid black;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center
 }
-
-.postArea textarea{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+.postArea {
+  text-align: center;
 }
-
+.postArea textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Profile Custom CSS */
+.show_likes {
+  align-content: center;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 10px;
+  text-align: left;
+  width: 95%;
+}
+.show_likes img {
+  width: 40px;
+  height: 40px;
+}
+.likes {
+  background-color: lightsteelblue;
+  border: 4px solid black;
+  height: 400px;
+  overflow-y: scroll;
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 80%;
+}
+.likes h3 {
+  margin-left: 10px;
+}
+.profileFooter {
+  border-top: solid thin;
+  border-color: black;
+  margin-top: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.profileFooter a {
+  font-size: 20px;
+  padding: 20px;
+}

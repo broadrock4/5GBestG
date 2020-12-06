@@ -5,7 +5,7 @@
     <meta charset ="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Profile Page</title>
+    <title> Admin Profile Page</title>
     <link rel="stylesheet" type="text/css" href="../Styles/5GBestG.css">
 
     </head>
@@ -18,16 +18,16 @@
         <hr>
 
         <!-- Navigation Bar -->
-         <div class="nav">
+        <div class="nav">
           <a class="active"
           href="../Home/home.html">Home</a>
-            <a href="../About_Us/about.html">About</a>
+            <a href="../About_Us/about.php">About</a>
             <a href="../Contact_US/contact.html">Contact Us</a>
-            <a href="../Profiles/userProfile.html">myProfile</a>
+            <a href="../Profiles/userProfile.php">myProfile</a>
 			<a href="../Login/login.html">Login</a>
-			 <!-- This link will have php that is only visible if viewer is an Admin -->
-			<a href="../Blog/post.html">Post</a>
+			<!-- This link will have php that is only visible if viewer is an Admin -->
             <div class="search-container">
+				
               <form action="/action_page.php">
                 <input type="text"
           placeholder="Search.." name="search">
@@ -52,7 +52,7 @@
 
 <div class="blogroll">
   <h5>Blogroll</h5>
-  <a href="../Blog/article.html">Blog 1</a>
+ <a href="../Blog/article.php">Blog 1</a>
   <a href="#">*Link 2</a>
   <a href="#">*Link 3</a>
   <a href="#">*Link 4</a>
@@ -68,8 +68,8 @@
     </header>
 <!-- This code is subject to change because all this information will need to be pulled from a database. We wanted to show what the final project will look like -->
       <div class= "pic-description">
-        <img src="../Styles/Profile.png"  alt="Profile Pic">
-        <h2>User Profile</h2>
+        <img src="../Styles/Profile.png" alt="Profile Pic">
+        <h2>Admin Profile</h2>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -89,28 +89,35 @@
       		<li> <p class="like-description">Lorem ipsum dolor sit amet, consectetur adipiscing
       			elit, sed do eiusmod tempor incididunt ut labore et olore magna aliqua. Ut
       			enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      			aliquip ex ea commodo consequat.</p> <br><br> </li>
-		
-				
+      			aliquip ex ea commodo consequat.</p> </li>
+			<li> <img src="../Styles/Like.png" alt="like" style="width: 200px; height: 100px; margin-left: 40px;"/> 
+				<br><br> </li>
 
           <li> <img src="../Styles/placeholder.jpg" alt="blog"/> </li>
           <li> <p class="like-description">Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et olore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.</p>  <br><br> </li>
-			
+            aliquip ex ea commodo consequat.</p> </li>
+			<li> <img src="../Styles/Dislike.png" alt="like" style="width: 200px; height: 100px; margin-left: 40px"/> 
+			 <br><br>
+			</li>
            <li> <img src="../Styles/placeholder.jpg" alt="blog"/> </li>
       		<li> <p class="like-description">Lorem ipsum dolor sit amet, consectetur adipiscing
       			elit, sed do eiusmod tempor incididunt ut labore et olore magna aliqua. Ut
       			enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      			aliquip ex ea commodo consequat.</p> <br><br> </li>
-			
+      			aliquip ex ea commodo consequat.</p> </li>
+			<li> <img src="../Styles/Like.png" alt="like" style="width: 200px; height: 100px; margin-left: 40px;"/> 
+				<br><br> </li>
+
           <li> <img src="../Styles/placeholder.jpg" alt="blog"/> </li>
           <li> <p class="like-description">Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et olore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.</p> <br><br> </li>
-
+            aliquip ex ea commodo consequat.</p> </li>
+			<li> <img src="../Styles/Dislike.png" alt="like" style="width: 200px; height: 100px; margin-left: 40px"/> 
+			 <br>
+				<br>
+			</li>
 	 </ul>
 </div>
 

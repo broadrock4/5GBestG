@@ -8,7 +8,6 @@ function chkLogin(){
 		return false;
 	}
 	else{
-		alert("Account Created!");
 		return true;
 	}
 }
