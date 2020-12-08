@@ -1,6 +1,6 @@
 <?php
 session_start();
-   $_SESSION['post_id'] = 4;
+$_SESSION['post_id'] = 4;
 $_SESSION['post_url'] = "../Blog/article4.php";
 $tempid = $_SESSION["user_id"];
  ?>
@@ -16,7 +16,7 @@ $tempid = $_SESSION["user_id"];
 </head>
 
   <body>
-
+<script type="text/javascript" color="#4eacea,#c1d8ac,#ebe1a9" opacity="1.0" zIndex="-2" count="120" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
     <header>
       <nav>
         <!--Logo for website -->
@@ -27,18 +27,17 @@ $tempid = $_SESSION["user_id"];
        <div class="nav">
           <a class="active"
           href="../Home/home.html">Home</a>
-            <a href="../About_Us/about.php">About</a>
+             <a href="../About_Us/about.php">About Us</a>
             <a href="../Contact_US/contact.html">Contact Us</a>
             <a href="../Profiles/userProfile.php">myProfile</a>
 			<a href="../Login/login.html">Login</a>
 			<!-- This link will have php that is only visible if viewer is an Admin -->
             <div class="search-container">
-				
-              <form action="/action_page.php">
+              <form action="../Search/search.php" method="post">
                 <input type="text"
           placeholder="Search.." name="search">
-                <button
-          type="submit">Submit</button>
+                <input
+          type="submit" name="searchSubmit" value="Submit"/>
               </form>
             </div>
           </div>
@@ -60,13 +59,11 @@ $tempid = $_SESSION["user_id"];
 	  
     <div class="Post">	
 		
-      <h2>Is 5G Harmful?</h2>
-      <h5>Posted on December 5, 2020</h5>
-       <img src="../Styles/165GCOVER-superJumbo.jpg" width="300px" height="300px" />
-       <p>As 5G technology makes its way around the world, people are starting to wonder if the electromagnetic field that comes with the 5G technology is safe. Many organizations and government agencies have deemed the 5G technology to be completely safe, with no effects of radio frequencies on our health. With that being said, there are some health experts that strongly disagree about 5G being safe. 5G technology consists of electromagnetic fields, which is a field of energy that results from electromagnetic radiation, a form of energy that occurs as a result of the flow of electricity. These electric fields can be found wherever there are power lines or outlets regardless whether the electricity is switched on or not. </p>
-       <p> Electromagnetic radiation exists as a spectrum of different wavelengths and frequencies, which are measured in hertz (Hz). Power lines typically operate between 50 and 60 Hz, which is fairly low on the spectrum. Radiofrequency EMFs include all wavelengths from 30 kilohertz to 300 GHz. The general public gets exposed to these RF-EMFs from things like handheld devices such as cell phones and tablets. RF-EMF is seen a lot in heating. High doses of RF-EMFs can lead to a rise in the temperature of the exposed tissues, leading to burns and other damage. Mobile devices emit RF-EMFs at low levels. The arrival of 5G has people concerned about these levels of radiation. </p>
-       <p> The World Health Organization states that “To date, no adverse health effects from low level, long term exposure to radiofrequency or power frequency fields have been confirmed, but scientists are actively continuing to research this area.” The Federal Communications state that “At relatively low levels of exposure to RF radiation – i.e., levels lower than those that would produce significant heating – the evidence for production of harmful biological effects is ambiguous and unproven.” However, Dr. Lennart Hardell from the department of oncology at Orebro University in Sweden thinks otherwise. In a 2017 article in the International Journal of Oncology, he states that “Being a member of ICNIRP is a conflict of interest in the scientific evaluation of health hazards from RF radiation through ties to military and industry. </p>
-       <p>This is particularly true, since the ICNIRP guidelines are of huge importance to the influential telecommunications, military, and power industries.” Dr. Hardell is one twenty-nine medical and scientific experts that issued The BioInitiative report that states that “Bioeffects are clearly established and occur at very low levels of exposure to [EMFs] and radiofrequency radiation.” The report highlights links to DNA damage, oxidative stress, neurotoxicity, carcinogenicity, sperm morphology, and fetal, newborn, and early life development. They even propose a link between RF-EMF exposure and a higher risk of developing autism spectrum disorder. The group urges governments and health agencies to establish new safety limits to protect the general public. The bottom line is, there is evidence that ties RF-EMF exposure to a small increase in the risk of developing certain cancers and other adverse health outcomes. Studies are still being conducted, so as we get updated throughout the years, it will become more clear whether or not 5G is really harmful to us. Until then, we either have to hang back and wait for more information, or pick a side of harmful or not harmful. </p>
+      <h2>5G and IoT</h2>
+      <h5>Posted on December 6, 2020</h5>
+       <img src="../Styles/IoT.jpg" width="300px" height="300px" alt="Blog Pic"/>
+       <p>The internet of things has been booming recently and can expect a bigger boom from 5G cellular technology as it becomes more available and as commercial services catch up with enhanced standards that are already exist. At this point you are either agreeing with me or wondering what the “Internet of Things” is. The Internet of Things (IoT) refers to the billions of physical devices around the world that are now connected to the internet, all collecting and sharing data. Due to the emergence of cheap computer chips and the easily accessible wireless networks, it’s possible to turn almost anything into a part of IoT.  </p>
+       <p> Connecting various objects and adding sensors to them adds more digital intelligence to devices that we did not even know we needed. These sensors add real-time data to things that do not need human intervention. Now that we know what IoT consists of, we can see that 5G will increase the overall bandwidth and allow massive amount of IoT devices to connect to each other. Bill Menezes, senior principal analyst at research firm Gartner states that “The 5G technology’s ultra-reliability comes from its ability to provide a stated quality of service or “real-time” communication vs. the best-efforts data delivery of Ethernet-based technologies such as Wi-Fi.” He also states that “5G has a theoretical latency of less that one millisecond in later releases as opposed to 20 to 40 milliseconds typical in current generation Wi-Fi deployments. Menezes also goes on to say that the automotive, manufacturing, construction, and natural resources sectors such as mining and oil and gas are among the industries with 5G opportunities for IoT. However, he says that 5G is not the best choice for all IoT networks because organizations will continue to use a variety of connectivity including Wi-Fi, Bluetooth, Zigbee, and 4G NB-IoT. So, all in all, it looks like 5G will impact IoT depending large part on the use case. </p>
 		
 		<form action="blogInteraction.php" class="articleLikeButton" method="post">
 			<input type ="submit" name="likeButton" value = "like"/>
@@ -130,9 +127,6 @@ $tempid = $_SESSION["user_id"];
   </body>
 </html>
 
-
-<!-- This button will have php to only allow Admins to see -->
-		  <input type="button" value="Remove"/>
 
 
 

@@ -11,12 +11,6 @@ exit;
 }
 include "../Config/config.php";
 
-$link = mysqli_connect( $hostname, $username, $password, $database );
-if ( !$link ) {
-  print "Error - Cannot connect to MYSQL";
-  exit;
-}
-
 if ( isset( $_GET[ 'delete' ] ) ) {
   $sql = "DELETE FROM comments WHERE comment_id ={$_GET['delete']} LIMIT 1";
   $result = mysqli_query( $link, $sql );

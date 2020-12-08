@@ -1,4 +1,15 @@
+<!DOCTYPE html>
 
+<html lang="en">
+  <head>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/5GBestG.css">
+</head>
+    </head>
+  <body>
 <?php
 include "../Config/config.php";
 
@@ -35,3 +46,6 @@ if ( isset( $_POST[ 'user_submit' ] ) ) {
 	 mysqli_close( $link );
 }
 ?>
+	  	  
+	  </body>
+</html>

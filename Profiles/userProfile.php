@@ -22,7 +22,7 @@ exit;
 </head>
     </head>
   <body>
-
+<script type="text/javascript" color="#4eacea,#c1d8ac,#ebe1a9" opacity="1.0" zIndex="-2" count="120" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
     <header>
       <nav>
         <!--Logo for website -->
@@ -33,18 +33,17 @@ exit;
          <div class="nav">
           <a class="active"
           href="../Home/home.html">Home</a>
-            <a href="../About_Us/about.php">About</a>
+            <a href="../About_Us/about.php">About Us </a>
             <a href="../Contact_US/contact.html">Contact Us</a>
             <a href="../Profiles/userProfile.php">myProfile</a>
 			<a href="../Login/login.html">Login</a>
 			<!-- This link will have php that is only visible if viewer is an Admin -->
             <div class="search-container">
-				
-              <form action="/action_page.php">
+              <form action="../Search/search.php" method="post">
                 <input type="text"
           placeholder="Search.." name="search">
-                <button
-          type="submit">Submit</button>
+                <input
+          type="submit" name="searchSubmit" value="Submit"/>
               </form>
             </div>
           </div>
@@ -79,7 +78,7 @@ exit;
     ?>
 <div class= "container-grid">
     <div class="col-1"> 
-		<img src='<?php echo($image_src);  ?>' >
+		<img src='<?php echo($image_src);  ?>' alt="User Profile Pic" >
     	<form method="post" action="upload.php" enctype='multipart/form-data'>
         	<input type='file' name='file' />
 			</br>
@@ -105,7 +104,6 @@ exit;
                ?>
                <a href="editProfile.php">Edit Bio</a> </div>
   </div>
-           <div>
 			   <div class="likes">
     <h3> Like History </h3>
     <?php

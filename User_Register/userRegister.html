@@ -9,6 +9,8 @@
 <script type="text/javascript" src="userRegister.js"> </script>
 </head>
 <body class="createAccountsBody" >
+	<script type="text/javascript" color="#4eacea,#c1d8ac,#ebe1a9" opacity="1.0" zIndex="-2" count="120" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+	<script type="text/javascript" color="#4eacea,#c1d8ac,#ebe1a9" opacity="1.0" zIndex="-2" count="120" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 <!--Logo for website --> 
 <img class="logo" src="../Styles/Logo.png" alt="The Logo of 5gBestG">
 <hr>
@@ -17,7 +19,7 @@
        <div class="nav">
           <a class="active"
           href="../Home/home.html">Home</a>
-            <a href="../About_Us/about.php">About</a>
+            <a href="../About_Us/about.php">About Us </a>
             <a href="../Contact_US/contact.html">Contact Us</a>
             <a href="../Profiles/userProfile.php">myProfile</a>
 			<a href="../Login/login.html">Login</a>
@@ -26,15 +28,15 @@
 	<h1>Sign Up</h1>
         <p>Please fill out form to create an account.</p>
 	  
-       <form action="">
+       <form action="../User_Register/userRegister.php" method="post">
 			
-                <input type="text" id="username" placeholder = "Username"/>
+                <input type="text" id="username" name="username" placeholder = "Username"/>
 			<br/> <br/>
-               <input type="password" id="pwd1" placeholder="Password"/> 
+               <input type="password" id="pwd1" name="pwd1" placeholder="Password"/> 
 			<br/> <br/>
- 				<input type="password" id="pwd2" placeholder="Re-Enter Password"/>
+ 				<input type="password" id="pwd2" name="pwd2" placeholder="Re-Enter Password"/>
 		 	<br/> <br/>
-				<input type="submit" class="regSubmitButton" id="submitButton" value="Create Account" />
+				<input type="submit" class="regSubmitButton" name="regSubmitButton" id="submitButton" value="Create Account" />
            
             <p>Already have an account? <a class ="special" href="../Login/login.html">Login here</a>.</p>
 			

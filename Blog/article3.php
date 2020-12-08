@@ -16,7 +16,7 @@ $tempid = $_SESSION["user_id"];
 </head>
 
   <body>
-
+<script type="text/javascript" color="#4eacea,#c1d8ac,#ebe1a9" opacity="1.0" zIndex="-2" count="120" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
     <header>
       <nav>
         <!--Logo for website -->
@@ -27,18 +27,17 @@ $tempid = $_SESSION["user_id"];
        <div class="nav">
           <a class="active"
           href="../Home/home.html">Home</a>
-            <a href="../About_Us/about.php">About</a>
+             <a href="../About_Us/about.php">About Us</a>
             <a href="../Contact_US/contact.html">Contact Us</a>
             <a href="../Profiles/userProfile.php">myProfile</a>
 			<a href="../Login/login.html">Login</a>
 			<!-- This link will have php that is only visible if viewer is an Admin -->
             <div class="search-container">
-				
-              <form action="/action_page.php">
+              <form action="../Search/search.php" method="post">
                 <input type="text"
           placeholder="Search.." name="search">
-                <button
-          type="submit">Submit</button>
+                <input
+          type="submit" name="searchSubmit" value="Submit"/>
               </form>
             </div>
           </div>
@@ -62,8 +61,8 @@ $tempid = $_SESSION["user_id"];
 		
       <h2>What is 5G</h2>
       <h5>Posted on December 5, 2020</h5>
-       <img src="../Styles/the-internet-4899254_1920.jpg" width="300px" height="300px" />
-       <p>You hear about 5G networks all the time in multiple different advertisements. Network companies such as T-Mobile, Verizon, and AT&ampT have advertised devices that have 5G capabilities, but what is 5G exactly? Well 5G, abbreviated version of 5th Generation, is the 5th generation mobile network, which is a new global wireless standard following 4G. 5G is designed to connect virtually everyone and everything together, mainly machines, objects and devices. The wireless technology for 5G is expected to deliver increased speeds, low latency, added reliability, a huge network capacity, more availability, and a more uniform experience to more users. With all these new editions towards performance and efficiency, the 5G network is an absolute game changer. e power lines or outlets regardless whether the electricity is switched on or not. </p>
+       <img src="../Styles/the-internet-4899254_1920.jpg" width="300px" height="300px" alt="Blog Pic"/>
+       <p>You hear about 5G networks all the time in multiple different advertisements. Network companies such as T-Mobile, Verizon, and AT&amp;T have advertised devices that have 5G capabilities, but what is 5G exactly? Well 5G, abbreviated version of 5th Generation, is the 5th generation mobile network, which is a new global wireless standard following 4G. 5G is designed to connect virtually everyone and everything together, mainly machines, objects and devices. The wireless technology for 5G is expected to deliver increased speeds, low latency, added reliability, a huge network capacity, more availability, and a more uniform experience to more users. With all these new editions towards performance and efficiency, the 5G network is an absolute game changer. e power lines or outlets regardless whether the electricity is switched on or not. </p>
        <p>Now you might be wondering who owns this shiny new wireless technology, and the answer is simple. Nobody. With that being said, there are several companies that are contributing to the creation and implementation of 5G. The 3rd Generation Partnership Project (3GPP) is a number of organizations that develop protocols for the 5G network. 5G is making its way around the United States, but on the global level, it is not as available as one might think. Global 5G population coverage was around 5 percent at the end of 2019, with most of that coming from countries such as the United States, China, South Korea and Switzerland.  </p>
        <p> The 5G network is like 4G LTE as it operates based on the same mobile networking principles. The new 5G NR (New Radio)  delivers a much higher degree of flexibility and scalability. 5G delivers faster and better mobile broadband services compared to 4G LTE. Many people think that 5G, will be crucial for autonomous vehicles to communicate with each other and read live map and traffic data. Mobile gamers would notice less latency when playing their favorite games. Videos watched on mobile devices should be basically instantaneous, with no loading or buffering. Facetime or any other video calling service should be crystal clear. Fitness devices such as watches or bands will monitor health in real time, maybe even alerting doctors when emergencies arise. All in all, 5G can and will change how we live our everyday lives. </p>
 		
@@ -130,8 +129,6 @@ $tempid = $_SESSION["user_id"];
 </html>
 
 
-<!-- This button will have php to only allow Admins to see -->
-		  <input type="button" value="Remove"/>
 
 
 

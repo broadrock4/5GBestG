@@ -35,7 +35,6 @@ function chkPasswords(){
 		return false;
 	}
 	else{
-		alert("Account Created!");
 		return true;
 	}
 }

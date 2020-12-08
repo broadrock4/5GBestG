@@ -34,8 +34,7 @@ mysqli_close($link);
 }
 
 if (isset($_POST["submitBio"])){
-	$temptext = $_POST['editBio'];
-
+	$temptext = mysqli_real_escape_string($link, $_POST['editBio']);
 $sql = "UPDATE users SET user_bio = '$temptext' WHERE user_id = '$id'";
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";

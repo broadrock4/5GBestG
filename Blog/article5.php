@@ -1,6 +1,6 @@
 <?php
 session_start();
-   $_SESSION['post_id'] = 5;
+$_SESSION['post_id'] = 5;
 $_SESSION['post_url'] = "../Blog/article5.php";
 $tempid = $_SESSION["user_id"];
  ?>
@@ -16,7 +16,7 @@ $tempid = $_SESSION["user_id"];
 </head>
 
   <body>
-
+<script type="text/javascript" color="#4eacea,#c1d8ac,#ebe1a9" opacity="1.0" zIndex="-2" count="120" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
     <header>
       <nav>
         <!--Logo for website -->
@@ -27,18 +27,17 @@ $tempid = $_SESSION["user_id"];
        <div class="nav">
           <a class="active"
           href="../Home/home.html">Home</a>
-            <a href="../About_Us/about.php">About</a>
+            <a href="../About_Us/about.php">About Us</a>
             <a href="../Contact_US/contact.html">Contact Us</a>
             <a href="../Profiles/userProfile.php">myProfile</a>
 			<a href="../Login/login.html">Login</a>
 			<!-- This link will have php that is only visible if viewer is an Admin -->
-            <div class="search-container">
-				
-              <form action="/action_page.php">
+           <div class="search-container">
+              <form action="../Search/search.php" method="post">
                 <input type="text"
           placeholder="Search.." name="search">
-                <button
-          type="submit">Submit</button>
+                <input
+          type="submit" name="searchSubmit" value="Submit"/>
               </form>
             </div>
           </div>
@@ -62,11 +61,10 @@ $tempid = $_SESSION["user_id"];
 		
       <h2>Is 5G Harmful?</h2>
       <h5>Posted on December 5, 2020</h5>
-       <img src="../Styles/165GCOVER-superJumbo.jpg" width="300px" height="300px" />
-       <p>As 5G technology makes its way around the world, people are starting to wonder if the electromagnetic field that comes with the 5G technology is safe. Many organizations and government agencies have deemed the 5G technology to be completely safe, with no effects of radio frequencies on our health. With that being said, there are some health experts that strongly disagree about 5G being safe. 5G technology consists of electromagnetic fields, which is a field of energy that results from electromagnetic radiation, a form of energy that occurs as a result of the flow of electricity. These electric fields can be found wherever there are power lines or outlets regardless whether the electricity is switched on or not. </p>
-       <p> Electromagnetic radiation exists as a spectrum of different wavelengths and frequencies, which are measured in hertz (Hz). Power lines typically operate between 50 and 60 Hz, which is fairly low on the spectrum. Radiofrequency EMFs include all wavelengths from 30 kilohertz to 300 GHz. The general public gets exposed to these RF-EMFs from things like handheld devices such as cell phones and tablets. RF-EMF is seen a lot in heating. High doses of RF-EMFs can lead to a rise in the temperature of the exposed tissues, leading to burns and other damage. Mobile devices emit RF-EMFs at low levels. The arrival of 5G has people concerned about these levels of radiation. </p>
-       <p> The World Health Organization states that “To date, no adverse health effects from low level, long term exposure to radiofrequency or power frequency fields have been confirmed, but scientists are actively continuing to research this area.” The Federal Communications state that “At relatively low levels of exposure to RF radiation – i.e., levels lower than those that would produce significant heating – the evidence for production of harmful biological effects is ambiguous and unproven.” However, Dr. Lennart Hardell from the department of oncology at Orebro University in Sweden thinks otherwise. In a 2017 article in the International Journal of Oncology, he states that “Being a member of ICNIRP is a conflict of interest in the scientific evaluation of health hazards from RF radiation through ties to military and industry. </p>
-       <p>This is particularly true, since the ICNIRP guidelines are of huge importance to the influential telecommunications, military, and power industries.” Dr. Hardell is one twenty-nine medical and scientific experts that issued The BioInitiative report that states that “Bioeffects are clearly established and occur at very low levels of exposure to [EMFs] and radiofrequency radiation.” The report highlights links to DNA damage, oxidative stress, neurotoxicity, carcinogenicity, sperm morphology, and fetal, newborn, and early life development. They even propose a link between RF-EMF exposure and a higher risk of developing autism spectrum disorder. The group urges governments and health agencies to establish new safety limits to protect the general public. The bottom line is, there is evidence that ties RF-EMF exposure to a small increase in the risk of developing certain cancers and other adverse health outcomes. Studies are still being conducted, so as we get updated throughout the years, it will become more clear whether or not 5G is really harmful to us. Until then, we either have to hang back and wait for more information, or pick a side of harmful or not harmful. </p>
+       <img src="../Styles/Wifi6vs5G-1080x675.png" width="300px" height="300px" alt="Blog Pic"/>
+       <p>We have a general understanding how of how 5G will change the game with its unheralded speeds and connectivity capabilities. 5G technology represents a major step forward from cellular and wireless broadband options we have today. With a much faster and more reliable connection on offer, will 5G replace the need for Wi-Fi? Some private network providers are looking to 5G as the savior to their city-wide connectivity problems. Implementing a grid of interconnected base stations, next generation 5G can typically support more devices, offer higher bandwidths, and lower latency for end users. However, according to a report by MarketsandMarkets, the global Wi-Fi network is growing exponentially and will only continue to do so.  </p>
+       <p> Wi-Fi data is accounting for over 50% of total IP traffic, in a market worth a staggering $33.6 billion. This does not seem like a market that is declining. The next stage of wireless broadband connection, called Wi-Fi 6, is set to offer speeds up to four times faster than current rates, as well as supporting more devices on a more robust network. This seems oddly similar to 5G does it not? Maybe it’s because the main reason that 5G will not oust Wi-Fi connectivity is the connectivity restrictions presented by chips in our Internet-enabled devices. All consumer devices rely on a Wi-Fi or 4G LTE connection. Wi-Fi also offers a more reliable and robust connection, which is important for enterprises and businesses that rely on a steady and well-supported connection. Wi-Fi is also more secure than publicly available cellular networks, an important caveat for end users, especially those enterprises that conduct business on publicly available connections.  </p>
+       <p> More devices are being connected to cellular and fixed wireless networks, meaning the demand for low latency and higher bandwidths is rising. Because 5G is a shared resource, its bandwidth is shared amongst the number of devices connected. So 5G is best at hosting multiple devices and offering fast speeds. The next iteration of Wi-Fi, however, will support mesh networking. A mesh network is a network infrastructure made up of a series of interconnected nodes, all connected directly and dynamically to as many other nodes in the network. This, in effect, offers greater speeds and reliability for relatively low costs. So where will this war between Wi-Fi and 5G take us. Will we continue with both, or will one eventually outdo the other one? Only time will tell now. </p>
 		
 		<form action="blogInteraction.php" class="articleLikeButton" method="post">
 			<input type ="submit" name="likeButton" value = "like"/>
@@ -130,9 +128,6 @@ $tempid = $_SESSION["user_id"];
   </body>
 </html>
 
-
-<!-- This button will have php to only allow Admins to see -->
-		  <input type="button" value="Remove"/>
 
 
 

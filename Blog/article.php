@@ -16,7 +16,7 @@ $tempid = $_SESSION["user_id"];
 </head>
 
   <body>
-
+<script type="text/javascript" color="#4eacea,#c1d8ac,#ebe1a9" opacity="1.0" zIndex="-2" count="120" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
     <header>
       <nav>
         <!--Logo for website -->
@@ -27,18 +27,17 @@ $tempid = $_SESSION["user_id"];
        <div class="nav">
           <a class="active"
           href="../Home/home.html">Home</a>
-            <a href="../About_Us/about.php">About</a>
+             <a href="../About_Us/about.php">About Us</a>
             <a href="../Contact_US/contact.html">Contact Us</a>
             <a href="../Profiles/userProfile.php">myProfile</a>
 			<a href="../Login/login.html">Login</a>
 			<!-- This link will have php that is only visible if viewer is an Admin -->
-            <div class="search-container">
-				
-              <form action="/action_page.php">
+           <div class="search-container">
+              <form action="../Search/search.php" method="post">
                 <input type="text"
           placeholder="Search.." name="search">
-                <button
-          type="submit">Submit</button>
+                <input
+          type="submit" name="searchSubmit" value="Submit"/>
               </form>
             </div>
           </div>
@@ -62,7 +61,7 @@ $tempid = $_SESSION["user_id"];
 		
       <h2>Is 5G Harmful?</h2>
       <h5>Posted on December 5, 2020</h5>
-       <img src="../Styles/165GCOVER-superJumbo.jpg" width="300px" height="300px" />
+       <img src="../Styles/165GCOVER-superJumbo.jpg" width="300px" height="300px" alt="Blog Pic"/>
        <p>As 5G technology makes its way around the world, people are starting to wonder if the electromagnetic field that comes with the 5G technology is safe. Many organizations and government agencies have deemed the 5G technology to be completely safe, with no effects of radio frequencies on our health. With that being said, there are some health experts that strongly disagree about 5G being safe. 5G technology consists of electromagnetic fields, which is a field of energy that results from electromagnetic radiation, a form of energy that occurs as a result of the flow of electricity. These electric fields can be found wherever there are power lines or outlets regardless whether the electricity is switched on or not. </p>
        <p> Electromagnetic radiation exists as a spectrum of different wavelengths and frequencies, which are measured in hertz (Hz). Power lines typically operate between 50 and 60 Hz, which is fairly low on the spectrum. Radiofrequency EMFs include all wavelengths from 30 kilohertz to 300 GHz. The general public gets exposed to these RF-EMFs from things like handheld devices such as cell phones and tablets. RF-EMF is seen a lot in heating. High doses of RF-EMFs can lead to a rise in the temperature of the exposed tissues, leading to burns and other damage. Mobile devices emit RF-EMFs at low levels. The arrival of 5G has people concerned about these levels of radiation. </p>
        <p> The World Health Organization states that “To date, no adverse health effects from low level, long term exposure to radiofrequency or power frequency fields have been confirmed, but scientists are actively continuing to research this area.” The Federal Communications state that “At relatively low levels of exposure to RF radiation – i.e., levels lower than those that would produce significant heating – the evidence for production of harmful biological effects is ambiguous and unproven.” However, Dr. Lennart Hardell from the department of oncology at Orebro University in Sweden thinks otherwise. In a 2017 article in the International Journal of Oncology, he states that “Being a member of ICNIRP is a conflict of interest in the scientific evaluation of health hazards from RF radiation through ties to military and industry. </p>
@@ -130,9 +129,6 @@ $tempid = $_SESSION["user_id"];
   </body>
 </html>
 
-
-<!-- This button will have php to only allow Admins to see -->
-		  <input type="button" value="Remove"/>
 
 
 
