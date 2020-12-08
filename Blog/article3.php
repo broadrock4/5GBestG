@@ -27,7 +27,7 @@ $tempid = $_SESSION["user_id"];
        <div class="nav">
           <a class="active"
           href="../Home/home.html">Home</a>
-              <a href="../About_Us/about_us.php">About</a>
+              <a href="../About_Us/about_us.php">About Us</a>
             <a href="../Contact_US/contact_us.html">Contact Us</a>
             <a href="../Profiles/userProfile.php">myProfile</a>
 			<a href="../Login/login.html">Login</a>
@@ -123,7 +123,7 @@ $tempid = $_SESSION["user_id"];
 	  	
 	 <footer class="AboutFooter">
 		 <a href="../Contact_US/contact_us.html">Contact Us</a>
-		 <a href="../About_Us/about_us.php">About</a>
+		 <a href="../About_Us/about_us.php">About Us</a>
 	</footer>
   </body>
 </html>
