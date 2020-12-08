@@ -2,23 +2,20 @@
 .loginHtml {
   height: 100%;
 }
-
 body {
- background-image: linear-gradient(black, blue, lightpink);
-	background-repeat: no-repeat;
-	color: white;
-	height: 100%;
-  zoom: 60%;
+  background-image: linear-gradient(black, blue, lightpink);
+  background-repeat: no-repeat;
+  color: white;
 }
 body p {
   font-size: 1.5vh;
 }
 h1 {
   text-align: center;
-	text-decoration: underline;
+  text-decoration: underline;
 }
 .createAccountsBody {
-	min-height: 100%;
+  min-height: 100%;
   text-align: center;
 }
 .logo {
@@ -184,7 +181,9 @@ h1 {
 }
 .homeFooter a {
   font-size: 20px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 /*Custom CSS for Create account / registration pages */
 .regSubmitButton {
@@ -202,7 +201,7 @@ h1 {
 .displayAdmins {
   border: medium solid black;
   height: 400px;
-	margin-top: 15px;
+  margin-top: 15px;
   overflow-y: scroll;
   width: 90%;
 }
@@ -223,10 +222,9 @@ th.tableImg, td.tableImg {
   width: 30%;
 }
 th.tableName, th.tableBio, td.tableName, td.tableBio {
-	padding-top: 20px;
-	text-align: center;
+  padding-top: 20px;
+  text-align: center;
   width: 25%;
-
 }
 .AboutFooter {
   border-top: solid thin;
@@ -286,7 +284,7 @@ th.tableName, th.tableBio, td.tableName, td.tableBio {
 }
 .Post p {
   text-align: left;
-	text-indent: 25px;
+  text-indent: 25px;
 }
 /* Fake image */
 .fakeimg {
