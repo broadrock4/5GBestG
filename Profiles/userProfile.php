@@ -78,7 +78,7 @@ exit;
     ?>
 <div class= "container-grid">
     <div class="col-1"> 
-		<img src='<?php echo($image_src);  ?>' alt="User Profile Pic" >
+		<img src='<?php echo($image_src);  ?>' >
     	<form method="post" action="upload.php" enctype='multipart/form-data'>
         	<input type='file' name='file' />
 			</br>
@@ -86,7 +86,7 @@ exit;
    		</form>
     </div>
     <div class="col-2">
-               <h2> <?PHP echo($_SESSION["username"]) ?></h2>
+               <h2 style="text-decoration: underline; font-weight: bold"> <?PHP echo($_SESSION["username"]) ?></h2>
                <?php
                include( "../Config/config.php" );
                $sql = "SELECT user_bio FROM users WHERE user_id = '$tempuser'";
@@ -117,7 +117,7 @@ exit;
 		}
         while ( $data = mysqli_fetch_assoc( $result ) ) {
 			$url = $data["post_url"];
-            echo( "<div class='show_likes'> <img src='../Styles/like.jpg'/>" . "   " . $data [ "title" ] . "         " . " <a href='$url' ]> $url </a> "  . "</div>" );
+            echo( "<div class='show_likes'> <img src='../Styles/like.jpg' alt='like'/>" . "   " . $data [ "title" ] . "         " . " <a href='$url' > $url </a> "  . "</div>" );
          
         }
         mysqli_close( $link );

@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" class="loginHtml">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../Styles/5GBestG.css"/>
 </head>
 
-  <body>
+  <body class ="createAccountsBody">
 	  <script type="text/javascript" color="#4eacea,#c1d8ac,#ebe1a9" opacity="1.0" zIndex="-2" count="120" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 <?php
 if ( isset( $_POST[ 'searchSubmit' ] ) ) {

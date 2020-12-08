@@ -59,7 +59,7 @@ $tempid = $_SESSION["user_id"];
 	  
     <div class="Post">	
 		
-      <h2>Is 5G Harmful?</h2>
+      <h2>Wifi vs. 5G</h2>
       <h5>Posted on December 5, 2020</h5>
        <img src="../Styles/Wifi6vs5G-1080x675.png" width="300px" height="300px" alt="Blog Pic"/>
        <p>We have a general understanding how of how 5G will change the game with its unheralded speeds and connectivity capabilities. 5G technology represents a major step forward from cellular and wireless broadband options we have today. With a much faster and more reliable connection on offer, will 5G replace the need for Wi-Fi? Some private network providers are looking to 5G as the savior to their city-wide connectivity problems. Implementing a grid of interconnected base stations, next generation 5G can typically support more devices, offer higher bandwidths, and lower latency for end users. However, according to a report by MarketsandMarkets, the global Wi-Fi network is growing exponentially and will only continue to do so.  </p>

@@ -1,15 +1,24 @@
 /* General CSS for most pages */
+.loginHtml {
+  height: 100%;
+}
+
 body {
-  background-color: paleturquoise;
+ background-image: linear-gradient(black, blue, lightpink);
+	background-repeat: no-repeat;
+	color: white;
+	height: 100%;
   zoom: 60%;
 }
 body p {
   font-size: 1.5vh;
 }
 h1 {
-  text-align: center
+  text-align: center;
+	text-decoration: underline;
 }
 .createAccountsBody {
+	min-height: 100%;
   text-align: center;
 }
 .logo {
@@ -89,8 +98,8 @@ h1 {
 }
 .category-menu a {
   /*background-color: #eee;*/
-  border-left: 2px solid black;
-  color: black;
+  border-left: 2px solid white;
+  color: white;
   display: block;
   padding: 12px;
   text-decoration: none;
@@ -108,8 +117,8 @@ h1 {
   width: 200px;
 }
 .blogroll a {
-  border-left: 2px solid black;
-  color: black;
+  border-left: 2px solid white;
+  color: white;
   display: block;
   padding: 12px;
   text-decoration: none;
@@ -214,9 +223,10 @@ th.tableImg, td.tableImg {
   width: 30%;
 }
 th.tableName, th.tableBio, td.tableName, td.tableBio {
-  overflow: hidden;
-  text-align: center;
-  width: 25%
+	padding-top: 20px;
+	text-align: center;
+  width: 25%;
+
 }
 .AboutFooter {
   border-top: solid thin;
@@ -231,7 +241,6 @@ th.tableName, th.tableBio, td.tableName, td.tableBio {
 }
 /*Custom CSS for Contact us page */
 .contact-us p {
-  border: thin solid;
   overflow: hidden;
   margin-left: 10px;
   text-align: left;
@@ -298,7 +307,7 @@ th.tableName, th.tableBio, td.tableName, td.tableBio {
   margin-right: auto;
 }
 .show_comments {
-  background-color: antiquewhite;
+  background-color: dodgerblue;
   border: 2px solid black;
   margin-left: 10%;
   margin-right: 10%;
@@ -329,7 +338,7 @@ th.tableName, th.tableBio, td.tableName, td.tableBio {
   height: 40px;
 }
 .likes {
-  background-color: lightsteelblue;
+  background-color: dodgerblue;
   border: 4px solid black;
   height: 400px;
   overflow-y: scroll;
@@ -351,38 +360,3 @@ th.tableName, th.tableBio, td.tableName, td.tableBio {
   font-size: 20px;
   padding: 20px;
 }
-
-/* Search bar CSS */
-.search-box{
-        width: 300px;
-        position: relative;
-        display: inline-block;
-        font-size: 14px;
-    }
-    .search-box input[type="text"]{
-        height: 32px;
-        padding: 5px 10px;
-        border: 1px solid #CCCCCC;
-        font-size: 14px;
-    }
-    .result{
-        position: absolute;        
-        z-index: 999;
-        top: 100%;
-        left: 0;
-    }
-    .search-box input[type="text"], .result{
-        width: 100%;
-        box-sizing: border-box;
-    }
-    /* Formatting result items */
-    .result p{
-        margin: 0;
-        padding: 7px 10px;
-        border: 1px solid #CCCCCC;
-        border-top: none;
-        cursor: pointer;
-    }
-    .result p:hover{
-        background: #f2f2f2;
-    }

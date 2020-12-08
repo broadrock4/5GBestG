@@ -71,7 +71,7 @@
 	    $tempBio = $data[ 'user_bio' ];
 	    echo( "<tr class='tableBorder'><td class='tableImg'> <img class='adminImg' src='$image_src'/> </td>" );
 	    echo( "<td class='tableName'>" . $tempName . "</td>");
-	    echo( "<td class='tableBio'>" . $tempBio . "</td> </tr>" );
+	    echo( "<td class='tableBio'> <div style='height:90px; overflow:hidden;'>" . $tempBio . " </div></td> </tr>" );
 	  }
 	}
 	echo("</table>");
@@ -79,7 +79,7 @@
 
 	?>
 	</div>
-	</div>
+	
   <br/>
 
 	<footer class="AboutFooter"> 
