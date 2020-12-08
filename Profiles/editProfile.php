@@ -18,7 +18,10 @@
     <!-- Navigation Bar -->
     <div class="nav"> <a class="active"
           href="../Home/home.html">Home</a> 
-		<a href="../About_Us/about.php">About Us </a> <a href="../Contact_US/contact.html">Contact Us</a> <a href="../Profiles/userProfile.php">myProfile</a> <a href="../Login/login.html">Login</a> 
+		 <a href="../About_Us/about_us.php">About</a>
+		<a href="../Contact_US/contact_us.html">Contact Us</a> 
+		<a href="../Profiles/userProfile.php">myProfile</a> 
+		<a href="../Login/login.html">Login</a> 
       <!-- This link will have php that is only visible if viewer is an Admin -->
       <div class="search-container">
               <form action="../Search/search.php" method="post">
@@ -54,6 +57,7 @@
   <input type="submit" name="submitBio" value="Submit">
 </form>
 	
-<footer class="AboutFooter"> <a href="../Contact_US/contact.html"> Contact Us</a> <a href="../About_Us/about.php"> About Us </a> </footer>
+<footer class="AboutFooter">  <a href="../Contact_US/contact_us.html">Contact Us</a>
+	 <a href="../About_Us/about_us.php">About</a> </footer>
 </body>
 </html>

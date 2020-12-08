@@ -9,7 +9,6 @@
 </head>
 
 <body>
-	<script type="text/javascript" color="#4eacea,#c1d8ac,#ebe1a9" opacity="1.0" zIndex="-2" count="120" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 <header>
   <div class="menu-container">
     <nav> 
@@ -21,8 +20,8 @@
        <div class="nav">
           <a class="active"
           href="../Home/home.html">Home</a>
-            <a href="../About_Us/about.php">About Us</a>
-            <a href="../Contact_US/contact.html">Contact Us</a>
+            <a href="../About_Us/about_us.php">About</a>
+            <a href="../Contact_US/contact_us.html">Contact Us</a>
             <a href="../Profiles/userProfile.php">myProfile</a>
 			<a href="../Login/login.html">Login</a>
 			<!-- This link will have php that is only visible if viewer is an Admin -->
@@ -84,8 +83,8 @@
   <br/>
 
 	<footer class="AboutFooter"> 
-	<a href="../Contact_US/contact.html"> Contact Us</a> 
-	<a href="../About_Us/about.php"> About Us </a> 
+	<a href="../Contact_US/contact_us.html"> Contact Us</a> 
+	 <a href="../About_Us/about_us.php">About</a>
 	</footer>
 </body>
 </html>
