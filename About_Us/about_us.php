@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="LoginHtml">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
 </header>
 <h1>About Us</h1>
 <div class= "container-grid"> 
-	<div class="col-1"> <img src="../Styles/5G_Logo_Bold.png" alt="Profile Pic"/> </div>
+	<div class="col-1"> <img src="../Styles/5G_Logo_Bold_-_Pink.png" alt="Profile Pic"/> </div>
   <div class="col-2">
   <p> The majority of people hear “5G” being advertised on numerous media outlets, whether it be on television ads, mobile ads, radio, billboards etc. Ask anyone about what 5G is, and they’ll probably say something like “It’s just a faster network for my devices”. As true as that may be, is that really all it is? The fact of the matter is that the masses don’t really know the concept of 5G and the pros and cons that come with it. Our blog site will help inform the general public of what really 5G is, how it works, and the potential hazardous health complications that come with it. Inform the public about 5G and provide a greater understanding of what it is, where 5G comes from, benefits and disadvantages, and the future capabilities. </p>
 	</div>
